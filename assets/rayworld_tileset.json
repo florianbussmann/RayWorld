@@ -1,0 +1,14 @@
+{ "columns":40,
+ "image":"world_spritesheet.png",
+ "imageheight":832,
+ "imagewidth":1280,
+ "margin":0,
+ "name":"Tileset",
+ "spacing":0,
+ "tilecount":1040,
+ "tiledversion":"1.7.2",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":"1.6"
+}
