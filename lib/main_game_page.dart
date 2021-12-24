@@ -26,7 +26,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE. **/
 
+import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+import 'ray_world_game.dart';
 import 'helpers/direction.dart';
 import 'helpers/joypad.dart';
 
@@ -38,13 +40,15 @@ class MainGamePage extends StatefulWidget {
 }
 
 class MainGameState extends State<MainGamePage> {
+  RayWorldGame game = RayWorldGame();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: const Color.fromRGBO(0, 0, 0, 1),
         body: Stack(
           children: [
-            // TODO 1
+            GameWidget(game: game),
             Align(
               alignment: Alignment.bottomRight,
               child: Padding(
